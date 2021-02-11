@@ -45,26 +45,28 @@ bi.clique <- function(filename, left_least = 1, right_least = 1, version = 1, fi
 
     # paste profile data into profile
     profile = paste("Biclique\tNumber\n")
-
-	for (i in seq(1, nelems-9, 3)){
-        profile = paste(profile, "K", profile.raw[i+2], ",", profile.raw[i+1], "\t\t", profile.raw[i+3], "\n", sep="")
-        envir$nofbi[envir$cnt] <- profile.raw[i+3]
-        envir$noflr[envir$cnt*2-1] <- profile.raw[i+2]
-        envir$noflr[envir$cnt*2] <- profile.raw[i+1]
-        envir$cnt <- envir$cnt + 1
-   	}
+	
+	#
+	#for (i in seq(1, nelems-9, 3)){
+        #profile = paste(profile, "K", profile.raw[i+2], ",", profile.raw[i+1], "\t\t", profile.raw[i+3], "\n", sep="")
+        #envir$nofbi[envir$cnt] <- profile.raw[i+3]
+        #envir$noflr[envir$cnt*2-1] <- profile.raw[i+2]
+        #envir$noflr[envir$cnt*2] <- profile.raw[i+1]
+        #envir$cnt <- envir$cnt + 1
+   	#}
+	#
 
    	#profile = paste(profile, "\n", sep="")
     #profile = paste(profile, "Number of left vertices     : ", profile.raw[nelems-7], "\n", sep="")
     #profile = paste(profile, "Number of right vertices    : ", profile.raw[nelems-6], "\n", sep="")
     #profile = paste(profile, "Number of edges             : ", profile.raw[nelems-5], "\n", sep="")
-    profile = paste(profile, "Number of bicliques         : ", profile.raw[nelems-4], "\n", sep="")
-    profile = paste(profile, "Vertex-maximum biclique     : ", "K", profile.raw[nelems], ",", profile.raw[nelems-1], "\n", sep="")
-    profile = paste(profile, "Edge-maximum biclique       : ", "K", profile.raw[nelems-2], ",", profile.raw[nelems-3], "\n", sep="")
+    #profile = paste(profile, "Number of bicliques         : ", profile.raw[nelems-4], "\n", sep="")
+    #profile = paste(profile, "Vertex-maximum biclique     : ", "K", profile.raw[nelems], ",", profile.raw[nelems-1], "\n", sep="")
+    #profile = paste(profile, "Edge-maximum biclique       : ", "K", profile.raw[nelems-2], ",", profile.raw[nelems-3], "\n", sep="")
     
 
     # print profile
-    on.exit(cat(profile))
+   # on.exit(cat(profile))
 
     # unlist biclique lists
     bi = list()
