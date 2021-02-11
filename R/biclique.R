@@ -47,13 +47,13 @@ bi.clique <- function(filename, left_least = 1, right_least = 1, version = 1, fi
     profile = paste("Biclique\tNumber\n")
 	
 	
-	for (i in seq(1, nelems-9, 3)){
-        profile = paste(profile, "K", profile.raw[i+2], ",", profile.raw[i+1], "\t\t", profile.raw[i+3], "\n", sep="")
-        envir$nofbi[envir$cnt] <- profile.raw[i+3]
-        envir$noflr[envir$cnt*2-1] <- profile.raw[i+2]
-        envir$noflr[envir$cnt*2] <- profile.raw[i+1]
-        envir$cnt <- envir$cnt + 1
-   	}
+	#for (i in seq(1, nelems-9, 3)){
+        #profile = paste(profile, "K", profile.raw[i+2], ",", profile.raw[i+1], "\t\t", profile.raw[i+3], "\n", sep="")
+        #envir$nofbi[envir$cnt] <- profile.raw[i+3]
+        #envir$noflr[envir$cnt*2-1] <- profile.raw[i+2]
+        #envir$noflr[envir$cnt*2] <- profile.raw[i+1]
+        #envir$cnt <- envir$cnt + 1
+   	#}
 	
 
    	#profile = paste(profile, "\n", sep="")
