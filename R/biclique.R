@@ -71,6 +71,8 @@ bi.clique <- function(filename, left_least = 1, right_least = 1, version = 1, fi
     # unlist biclique lists
     bi = list()
     for(i in 1:profile.raw[nelems-4]){
+	    cat(nelems,'\n')
+	    cat(i,'\n')
         temp1 = unlist(data.raw[[1]][[i]])
         temp2 = unlist(data.raw[[2]][[i]])
         idx = paste("biclique", i, sep="")
