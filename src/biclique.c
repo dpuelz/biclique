@@ -336,11 +336,11 @@ void biclique_find_improve(num_t **g_right, num_t **g_left, BiGraph *G, num_t *n
             if (PRINT) biclique_out(&(g_right[nnr[0]]), &(g_left[nnl[0]]), G, clique, new_nc, new_left, new_nl);
         }
         
-        /* Recursively find bicliques */
+        /* Recursively find bicliques
         if ((new_ne < new_ce) && (new_nc+(new_ce-new_ne) >= RLEAST)) {
             biclique_find_basic(g_right, g_left, G, nclique, clique, new_nc, \
                 new_left, new_nl, new_right, new_ne, new_ce);
-        }
+        }*/ //PUELZ
         
         /* Move v and other qualified vertics to former candidate set */
         // ne += nn; the actual code
