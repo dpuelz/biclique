@@ -344,7 +344,7 @@ void biclique_find_improve(num_t **g_right, num_t **g_left, BiGraph *G, num_t *n
         
         /* Move v and other qualified vertics to former candidate set */
         // ne += nn; the actual code
-        ne = ce // PUELZ;
+        ne = ce; // PUELZ
 
     }
     
